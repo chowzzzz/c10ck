@@ -1,0 +1,61 @@
+@font-face {
+    font-family: digital-7;
+    src: url('../fonts/digital-7.regular.ttf')
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto 0 auto;
+    grid-template-rows: auto 7px auto;
+    grid-template-areas: 
+        "clock closeBtn"
+        "clock ."
+        "clock setBtn"   
+}
+
+#clock {
+    grid-area: clock;
+
+    justify-self: center;
+    align-self: center;
+
+    font-family: digital-7;
+    font-size: 40px;
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 40px #ff0080;
+    -webkit-app-region: drag;
+}
+
+#closeBtn {
+    grid-area: closeBtn;
+
+    justify-self: center;
+    align-self: end;
+    font-size: 13px;
+}
+
+#setBtn {
+    grid-area: setBtn;
+
+    justify-self: center;
+    align-self: start;
+    font-size: 11px;
+}
+
+#closeBtn, #setBtn {
+    color: #fff;
+    text-shadow: 0 0 5px #fff, 0 0 13px #ff0080;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+#closeBtn:hover, #setBtn:not(.no-hover):hover {
+    color: #ff9ece;
+    text-shadow: none;
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>c10ck settings</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/settings.css">
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+</head>
+
+<body style="-webkit-app-region: drag">
+    <h2 id="settings">Settings</h2>
+    <a id="closeBtn2">
+        <i class="far fa-times-circle"></i>
+    </a>
+    <p id="colour">Colours:</p>
+    <p class="col" id="pink">Pink</p>
+    <p class="col" id="blue">Blue</p>
+    <p class="col" id="green">Green</p>
+    <p class="col" id="yellow">Yellow</p>
+    <p class="col" id="violet">Violet</p>
+
+    <p id="format">Time Format:</p>
+    <p class="for" id="a">12-Hr format</p>
+    <p class="for" id="b">24-Hr format</p>
+
+    <p id="launch">Start at login :</p>
+    <p id="yes">
+        <label class="container">Yes 
+            <input type="radio" id="y" name="start" value="yes" onclick="autoLaunch()" checked>
+        </label>
+    </p>
+    <p id="no">
+        <label class="container">No 
+            <input type="radio" id="n" name="start" value="no" onclick="autoLaunch()">
+        </label>
+    </p>
+    <!-- 
+    <p id="yes"><input type="radio" id="yesR" onclick="yes()" name="start" value="yes"><label for="yesR"> Yes</label></p>
+    <p id="no"><input type="radio" id="noR" onclick="no()" name="start" value="no"><label for="noR"> No</label></p> -->
+
+    <script src="settings.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+@font-face {
+    font-family: digital-7;
+    src: url('../fonts/digital-7.regular.ttf')
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Amatic SC', cursive;
+    font-size: 20px;
+    color: #fff;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 6% 25% auto auto auto 10%;
+    grid-template-rows: 3% 7% 20% repeat(2, 7%) 4% repeat(2, 7%) 4% 7% 6% 7% auto;
+    grid-template-areas: 
+        ". settings . . . ."
+        ". . . . . closeBtn2"
+        ". . . . . ."
+        ". colour col1 col2 col3 ."
+        ". . col1 col2 col3 ."
+        ". . . . . ."
+        ". . col4 col5 . ."
+        ". . col4 col5 . ."
+        ". . . . . ."
+        ". format a b . ."
+        ". . . . . ."
+        ". launch yes no . ."
+        ". . . . . ."    
+}
+
+#settings {
+    grid-area: settings;
+
+    justify-self: start;
+    align-self: start;
+}
+
+#closeBtn2 {
+    grid-area: closeBtn2;
+
+    justify-self: center;
+    align-self: end;
+    font-size: 15px;
+
+    text-shadow: 0 0 5px #fff, 0 0 13px #ff0080;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+#closeBtn2:hover {
+    color: #ff9ece;
+    text-shadow: none;
+}
+
+#colour {
+    grid-area: colour;
+}
+
+#pink {
+    grid-area: col1; 
+}
+#blue {
+    grid-area: col2;
+}
+#green{
+    grid-area: col3;
+}
+#yellow{
+    grid-area: col4;
+}
+#violet{
+    grid-area: col5;
+}
+
+#pink, #blue, #green, #yellow, #violet {
+    justify-self: start;
+    align-self: end;
+    font-size: 30px;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+#pink:hover {
+    color: #ff9ece;
+}
+#blue:hover {
+    color: #1ad1ff;
+}
+#green:hover {
+    color: #00FF00;
+}
+#yellow:hover {
+    color: #Faed27;
+}
+#violet:hover {
+    color: #cc66ff;
+}
+
+#format {
+    grid-area: format;
+}
+#a {
+    grid-area: a;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+    justify-self: start;
+    align-self: end;
+}
+#b {
+    grid-area: b;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+    justify-self: end;
+    align-self: end;
+}
+
+#launch {
+    grid-area: launch;
+}
+#yes {
+    grid-area: yes;
+
+    -webkit-app-region: no-drag;
+}
+#no {
+    grid-area: no;
+
+    -webkit-app-region: no-drag;
+}
+p input, p label {
+    cursor: pointer;
+}
+
+#colour, #format, #launch, #yes, #no {
+    justify-self: start;
+    align-self: end;
+}
+
+#a:hover, #b:hover {
+    color: #ff9ece;
+}
