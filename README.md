@@ -2,6 +2,7 @@
 
 c10ck is a neon clock application that displays the time on your desktop.
 
+![alt text](https://github.com/chowzzzz/c10ck/blob/master/logo.png?raw=true)
 [Logo](logo.png)
 [How c10ck looks like](c10ck-demo.png)
 [Menu Settings](c10ck-menu-settings.png)
