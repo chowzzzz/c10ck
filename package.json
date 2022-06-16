@@ -16,7 +16,7 @@
     "braces": "^3.0.2",
     "decompress-zip": "^0.3.3",
     "dot-prop": "^6.0.1",
-    "electron": ">=9.4.0",
+    "electron": ">=15.5.5",
     "electron-packager": "^12.1.0",
     "electron-reload": "^1.2.3",
     "electron-store": "^2.0.0",
